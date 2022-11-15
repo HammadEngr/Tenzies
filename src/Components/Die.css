@@ -1,0 +1,82 @@
+.dot {
+  width: 0.7rem;
+  height: 0.7rem;
+  background-image: linear-gradient(
+    to top left,
+    rgb(26, 26, 26),
+    rgb(119, 119, 119)
+  );
+  border-radius: 50%;
+}
+.dots__1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dots__2 {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  grid-area: "one two";
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.dots__3 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "one two three"
+    "four five six"
+    "seven eight nine";
+  gap: 0.3rem;
+}
+.dots__3 .dot--1 {
+  grid-area: three;
+}
+.dots__3 .dot--2 {
+  grid-area: five;
+}
+.dots__3 .dot--3 {
+  grid-area: seven;
+}
+.dots__4 {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  gap: 1.3rem;
+}
+.dots__5 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "one two three"
+    "four five six"
+    "seven eight nine";
+  gap: 0.4rem;
+}
+.dots__5 .dot--1 {
+  grid-area: one;
+}
+.dots__5 .dot--2 {
+  grid-area: three;
+}
+.dots__5 .dot--3 {
+  grid-area: five;
+}
+.dots__5 .dot--4 {
+  grid-area: seven;
+}
+.dots__5 .dot--5 {
+  grid-area: nine;
+}
+.dots__6 {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 0.4rem;
+  column-gap: 1.3rem;
+}
